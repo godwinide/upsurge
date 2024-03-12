@@ -2169,12 +2169,12 @@
               <ul class="dropdown-menu dropdown-menu-right">
                 <a
                   class="dropdown-item"
-                  href="mailto:support@<%= res.locals.siteName %>.net"
+                  href="mailto:upsurgecustomercontact@yahoo.com"
                   target="_blank"
                   ><i class="fa fa-support"></i>Support</a
                 >
                 <li class="dropdown-divider"></li>
-                <a class="dropdown-item" href="logout.php"
+                <a class="dropdown-item" href="/logout"
                   ><i class="fa fa-power-off"></i>Logout</a
                 >
               </ul>
@@ -2707,7 +2707,7 @@
         $("._pay_now").click(function () {
           Swal.fire({
             // icon: 'info',
-            html: "<center><p>All Bitcoin payments should be sent to the bitcoin address below:</p><br><b id='cWW'>bc1q92zrfpk49mll9jsz2zwc6jg7y2v2gv0zdgkemp<p></p></b><br><p>Once we confirm your payment, your account will be funded instantly.</p><br><span>For more information contact us immediately through our official email address support@<%= res.locals.siteName %>.net. Thanks for choosing <%= res.locals.siteName %></span><br><b class='cWA btn btn-warning btn-sm _w89'>Copy wallet address</b> <input type='text' id='cWIIT' value='bc1q92zrfpk49mll9jsz2zwc6jg7y2v2gv0zdgkemp'/></center>",
+            html: "<center><p>All Bitcoin payments should be sent to the bitcoin address below:</p><br><b id='cWW'>bc1q92zrfpk49mll9jsz2zwc6jg7y2v2gv0zdgkemp<p></p></b><br><p>Once we confirm your payment, your account will be funded instantly.</p><br><span>For more information contact us immediately through our official email address upsurgecustomercontact@yahoo.com. Thanks for choosing <%= res.locals.siteName %></span><br><b class='cWA btn btn-warning btn-sm _w89'>Copy wallet address</b> <input type='text' id='cWIIT' value='bc1q92zrfpk49mll9jsz2zwc6jg7y2v2gv0zdgkemp'/></center>",
             showConfirmButton: true,
           });
           $(".cWA").click(function () {
@@ -2735,7 +2735,7 @@
           $(this).click(function () {
             Swal.fire({
               // icon: 'info',
-              html: "Hello , To become a referral or redeem your referral bonus, send us a message via <b>support@<%= res.locals.siteName %>.net</b> or contact our live chat team to redeem your referral bonus.<br><br><div class='alert alert-info alert-bordered' style='font-size: 14px !important;'>For more information contact us immediately through our official email address support@<%= res.locals.siteName %>.net. Thanks for choosing <%= res.locals.siteName %></div>",
+              html: "Hello , To become a referral or redeem your referral bonus, send us a message via <b>upsurgecustomercontact@yahoo.com</b> or contact our live chat team to redeem your referral bonus.<br><br><div class='alert alert-info alert-bordered' style='font-size: 14px !important;'>For more information contact us immediately through our official email address upsurgecustomercontact@yahoo.com. Thanks for choosing <%= res.locals.siteName %></div>",
               showConfirmButton: true,
             });
           });
@@ -2752,7 +2752,7 @@
                 pck +
                 "</b>, please contact our Live Chat agent to receive the appropriate payment details. Alternatively, you can contact your Account Manager to help you with the account upgrade. <b>$" +
                 _amount_ +
-                ".00</b><br><br><div class='alert alert-info alert-bordered' style='font-size: 14px !important;'>For more information contact us immediately through our official email address support@<%= res.locals.siteName %>.net. Thanks for choosing <%= res.locals.siteName %></div>",
+                ".00</b><br><br><div class='alert alert-info alert-bordered' style='font-size: 14px !important;'>For more information contact us immediately through our official email address upsurgecustomercontact@yahoo.com. Thanks for choosing <%= res.locals.siteName %></div>",
               showConfirmButton: true,
             });
           });
