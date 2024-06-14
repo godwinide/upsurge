@@ -2385,6 +2385,32 @@
         });
       });
     </script>
+
+    <script
+      async
+      src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"
+    ></script>
+    <% if(site?.whatsappNumber){%>
+    <script>
+      var wa_btnSetting = {
+        btnColor: "#16BE45",
+        ctaText: "WhatsApp Us",
+        cornerRadius: 40,
+        marginBottom: 20,
+        marginLeft: 20,
+        marginRight: 20,
+        btnPosition: "left",
+        whatsAppNumber: "<%= site.whatsappNumber %>",
+        welcomeMessage: "Hello",
+        zIndex: 999999,
+        btnColorScheme: "light",
+      };
+      window.onload = () => {
+        _waEmbed(wa_btnSetting);
+      };
+    </script>
+    <%}%>
+
     <script
       src="//code.tidio.co/tcr7hgjvtwtv53jkv2mddtntzg7d81pv.js"
       async
